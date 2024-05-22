@@ -1,0 +1,26 @@
+.Banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+.Banner__Nav {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+.Banner__Nav a {
+  text-decoration: none;
+}
+.Banner__Nav a span {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.Banner .Nav-active {
+  text-decoration: underline;
+  color: black;
+}
+
+/*# sourceMappingURL=styles.css.map */
