@@ -23,4 +23,129 @@
   color: black;
 }
 
+.Footer {
+  background: black;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Footer img {
+  margin-top: 20px;
+}
+.Footer p {
+  color: white;
+  font-family: "Montrserrat", sans-serif;
+  font-size: 17px;
+  margin: 30px 0 0 0;
+}
+
+body {
+  margin: 0;
+}
+
+.Picture__accueil {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0 20px 0 32px;
+}
+.Picture__accueil img {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.Picture__accueil span {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background: #000000;
+  opacity: 60%;
+  width: 90%;
+  border-radius: 15px;
+}
+.Picture__accueil p {
+  position: absolute;
+  z-index: 2;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-shadow: 2px 0px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+  margin: 40px 90px 0 100px;
+  border-radius: 20px;
+}
+.container__structure {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px;
+  gap: 60px;
+}
+.container__structure_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+}
+.container__structure_cards img {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.container__structure_cards p {
+  position: absolute;
+  bottom: 0px;
+  left: 12px;
+  width: 50%;
+  font-family: "Montserra", sans-serif;
+  color: white;
+  font-weight: 700;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container__404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__404_error {
+  font-size: 288px;
+  font-weight: 700;
+  color: #ff6060;
+  margin-top: 25px;
+}
+.container__404_text {
+  font-size: 36px;
+  font-weight: 500;
+  color: #ff6060;
+  margin-top: 50px;
+}
+.container__404 a {
+  margin: 70px 0 120px 0;
+}
+.container__404_link {
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=styles.css.map */
