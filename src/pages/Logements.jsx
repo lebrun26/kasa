@@ -1,9 +1,13 @@
 import React from "react";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const Logements = () => {
   return (
     <div>
-      <p>test page logements</p>
+      <NavBar />
+      <div></div>
+      <Footer />
     </div>
   );
 };

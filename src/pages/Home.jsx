@@ -1,13 +1,13 @@
 import React from "react";
-import Banner from "../components/Banner";
+import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import HomePicture from "../components/HomePicture";
+import HomePicture from "../components/Banner";
 import CardsLogements from "../components/CardsLogements";
 
 const Home = () => {
   return (
     <div>
-      <Banner />
+      <NavBar />
       <div>
         <HomePicture />
       </div>

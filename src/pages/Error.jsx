@@ -1,12 +1,12 @@
 import React from "react";
-import Banner from "../components/Banner";
+import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Error404 from "../components/Error404";
 
 const Error = () => {
   return (
     <div>
-      <Banner />
+      <NavBar />
       <div>
         <Error404 />
       </div>
