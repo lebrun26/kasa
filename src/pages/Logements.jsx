@@ -3,6 +3,8 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
+import CarousselLogement from "../components/CarousselLogement";
+import PresentationLogement from "../components/PresentationLogement";
 
 const Logements = () => {
   const { id } = useParams();
@@ -46,40 +48,10 @@ const Logements = () => {
   return (
     <div>
       <NavBar />
-      <div>
+      <div className="container__logement">
+        <CarousselLogement images={logement.pictures} />
         <div>
-          <img
-            src="/images/arrow_left.png"
-            alt="Fleche de gauche pour le caroussel"
-          />
-          <img
-            src={logement.cover}
-            alt={`Caroussel qui correspond au logement ${logement.title}`}
-          />
-          <span>?/4</span>
-          <img
-            src="/images/arrow_right.png"
-            alt="Flèche de droite pour le caroussel"
-          />
-        </div>
-        <div>
-          <div>
-            <h1>{logement.title}</h1>
-            <p>{logement.location}</p>
-            {/*Ici je pense qu'il faut faire un .map pour parcourir l'onglet tag  */}
-          </div>
-          <div>
-            <div>
-              <p>{logement.host.name}</p>
-              <img
-                src={logement.host.picture}
-                alt={`Img de la propriétaire ${logement.host.name}`}
-              />
-            </div>
-            <div>
-              {/*Mettre en place le systeme d'etoile avec pareil // logement.rating */}
-            </div>
-          </div>
+          <PresentationLogement presentation={logement} />
         </div>
         <div>{/*Ici il y a la description et l'équipement */}</div>
       </div>
