@@ -44,6 +44,7 @@
   width: 100%;
   height: 525px;
   object-fit: cover;
+  border-radius: 25px;
 }
 .container__caroussel .caroussel__counter {
   position: absolute;
@@ -61,6 +62,72 @@
 
 .container__logement {
   padding: 0px 90px 50px 90px;
+}
+
+/* Style du composant presentation logement */
+.presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.presentation__main h1 {
+  color: #ff6060;
+  font-weight: 500;
+  margin-top: 0;
+}
+.presentation__main span {
+  font-weight: 600;
+}
+.presentation__main__tags {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.presentation__main__tags p {
+  color: white;
+  background-color: #ff6060;
+  padding: 5px 20px 5px 20px;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 15px;
+}
+.presentation__second {
+  display: flex;
+  flex-direction: column;
+}
+.presentation__second__profil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.presentation__second__profil p {
+  margin-right: 15px;
+  color: #ff6060;
+  font-weight: 500;
+  width: 70px;
+  text-align: right;
+}
+.presentation__second__profil img {
+  width: 75px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.presentation__second__rating {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+.presentation__second__rating .star-rating {
+  display: flex;
+}
+.presentation__second__rating .star-rating .fa-star {
+  font-size: 20px;
+  color: #ddd;
+  margin-right: 10px;
+}
+.presentation__second__rating .star-rating .red {
+  color: #ff6060;
 }
 
 .Footer {

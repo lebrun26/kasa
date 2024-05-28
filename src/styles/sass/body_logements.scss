@@ -1,3 +1,73 @@
 .container__logement {
   padding: 0px 90px 50px 90px;
 }
+
+/* Style du composant presentation logement */
+.presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  &__main {
+    & h1 {
+      color: #ff6060;
+      font-weight: 500;
+      margin-top: 0;
+    }
+    & span {
+      font-weight: 600;
+    }
+    &__tags {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      & p {
+        color: white;
+        background-color: #ff6060;
+        padding: 5px 20px 5px 20px;
+        font-weight: 600;
+        font-size: 15px;
+        border-radius: 15px;
+      }
+    }
+  }
+  &__second {
+    display: flex;
+    flex-direction: column;
+    &__profil {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      & p {
+        margin-right: 15px;
+        color: #ff6060;
+        font-weight: 500;
+        width: 70px;
+        text-align: right;
+      }
+      & img {
+        width: 75px;
+        border-radius: 50px;
+        object-fit: cover;
+      }
+    }
+    &__rating {
+      margin-top: 25px;
+      display: flex;
+      justify-content: flex-end;
+      & .star-rating {
+        display: flex;
+
+        .fa-star {
+          font-size: 20px;
+          color: #ddd; // Couleur par défaut des étoiles (gris clair)
+          margin-right: 10px;
+        }
+
+        .red {
+          color: #ff6060; // Couleur pour les étoiles pleine
+        }
+      }
+    }
+  }
+}
