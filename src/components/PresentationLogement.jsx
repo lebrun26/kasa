@@ -24,9 +24,6 @@ const PresentationLogement = ({ presentation }) => {
         <div className="presentation__second__rating">
           <StarRating rating={presentation.rating} />
         </div>
-        <div>
-          {/*Mettre en place le systeme d'etoile avec pareil // logement.rating */}
-        </div>
       </div>
     </div>
   );

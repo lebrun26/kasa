@@ -5,6 +5,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import CarousselLogement from "../components/CarousselLogement";
 import PresentationLogement from "../components/PresentationLogement";
+import DescriptionLogement from "../components/DescriptionLogement";
 
 const Logements = () => {
   const { id } = useParams();
@@ -53,7 +54,9 @@ const Logements = () => {
         <div>
           <PresentationLogement presentation={logement} />
         </div>
-        <div>{/*Ici il y a la description et l'équipement */}</div>
+        <div>
+          <DescriptionLogement description={logement} />
+        </div>
       </div>
       <Footer />
     </div>
