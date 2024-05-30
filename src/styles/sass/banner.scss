@@ -22,3 +22,26 @@
     color: black;
   }
 }
+
+// Responsive Mobile
+
+@media (max-width: 480px) {
+  .Banner {
+    padding: 25px 10px 25px 20px;
+    &__Nav {
+      justify-content: flex-end;
+      gap: 25px;
+      width: 80%;
+    }
+    &__Logo {
+      & img {
+        width: 65%;
+      }
+    }
+    &__Nav {
+      & a {
+        font-size: 14px;
+      }
+    }
+  }
+}

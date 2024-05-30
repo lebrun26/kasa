@@ -1,11 +1,11 @@
 import React from "react";
 
-const HomePicture = () => {
+const HomePicture = ({ title, img, spanOpacity }) => {
   return (
-    <div className="Picture__accueil">
-      <img src="/images/image_accueil.jpg" alt="Reprensente une falaise" />
-      <span />
-      <p>Chez vous, partout et ailleurs</p>
+    <div className="Picture__Banner">
+      <img src={img} alt="Les falaise, Montagne" />
+      <span style={{ opacity: spanOpacity }} />
+      <p>{title}</p>
     </div>
   );
 };

@@ -2,11 +2,12 @@ body {
   margin: 0;
 }
 
-.Picture__accueil {
-  height: 130px;
+.Picture__Banner {
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
   margin: 0 20px 0 32px;
   & img {
@@ -23,7 +24,7 @@ body {
     position: absolute;
     z-index: 1;
     background: #000000;
-    opacity: 60%;
+    //opacity: 60%;
     width: 90%;
     border-radius: 15px;
   }
@@ -32,8 +33,9 @@ body {
     z-index: 2;
     font-size: 40px;
     font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     color: white;
-    text-shadow: 2px 0px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    text-shadow: 2px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
       1px 1px 0 #000;
   }
 }
@@ -73,6 +75,38 @@ body {
         font-family: "Montserra", sans-serif;
         color: white;
         font-weight: 700;
+      }
+    }
+  }
+}
+
+// Responsive Mobile
+
+@media (max-width: 480px) {
+  .Picture__Banner {
+    margin: 0;
+    height: 128px;
+    & p {
+      font-size: 27px;
+      width: 83%;
+    }
+  }
+  .container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 0 0;
+    &__structure {
+      gap: 30px;
+      margin: 0;
+      &_cards {
+        & p {
+          left: 25px;
+        }
+        & img {
+          width: 90%;
+          height: 300px;
+        }
       }
     }
   }

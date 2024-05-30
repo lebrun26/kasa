@@ -6,11 +6,15 @@ import Error404 from "../components/Error404";
 const Error = () => {
   return (
     <div>
-      <NavBar />
+      <header>
+        <NavBar />
+      </header>
       <div>
         <Error404 />
       </div>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

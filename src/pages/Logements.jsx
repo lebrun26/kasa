@@ -48,7 +48,9 @@ const Logements = () => {
 
   return (
     <div>
-      <NavBar />
+      <header>
+        <NavBar />
+      </header>
       <div className="container__logement">
         <CarousselLogement images={logement.pictures} />
         <div>
@@ -58,7 +60,9 @@ const Logements = () => {
           <DescriptionLogement description={logement} />
         </div>
       </div>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };
