@@ -394,4 +394,20 @@ body {
   font-weight: 600;
 }
 
+@media (max-width: 480px) {
+  .container__404 a {
+    margin: 100px 0 86px 0;
+  }
+  .container__404_error {
+    font-size: 96px;
+    margin-top: 100px;
+  }
+  .container__404_text {
+    font-size: 18px;
+    margin-top: 120px;
+    width: 72%;
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
