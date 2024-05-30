@@ -140,3 +140,56 @@
 .dropdown-item {
   padding: 5px 20px;
 }
+
+// Responsive Mobile
+
+@media (max-width: 480px) {
+  .container__logement {
+    padding: 0 11px 50px 11px;
+    .presentation {
+      flex-direction: column;
+      &__main {
+        & h1 {
+          font-size: 23px;
+        }
+        &__tags {
+          & p {
+            border-radius: 10px;
+            font-size: 10px;
+          }
+        }
+      }
+      &__second {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        &__profil {
+          & img {
+            width: 45px;
+          }
+          & p {
+            font-size: 14px;
+          }
+        }
+        &__rating {
+          & .star-rating {
+            & .fa-star {
+              font-size: 14px;
+              margin-right: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .container__dropMenu {
+    flex-direction: column;
+    gap: 20px;
+    .dropdown-menu {
+      width: 100%;
+      &.open {
+        margin-bottom: 44%;
+      }
+    }
+  }
+}

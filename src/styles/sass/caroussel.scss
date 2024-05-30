@@ -34,3 +34,26 @@
     right: 15px;
   }
 }
+
+// Responsive Mobile
+
+@media (max-width: 480px) {
+  .container__caroussel {
+    height: 380px;
+    .caroussel__button--left {
+      width: 47px;
+      top: 50%;
+      left: 0;
+    }
+    .caroussel__button--right {
+      width: 47px;
+      top: 50%;
+      right: 0;
+    }
+    .caroussel__image {
+      & img {
+        height: 380px;
+      }
+    }
+  }
+}

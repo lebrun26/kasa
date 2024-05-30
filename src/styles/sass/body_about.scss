@@ -12,3 +12,11 @@
 .Footer {
   margin-top: 97px;
 }
+
+// Responsive Mobile
+
+@media (max-width: 480px) {
+  .container__DropMenu__about {
+    margin: 20% 0 60% 0;
+  }
+}
