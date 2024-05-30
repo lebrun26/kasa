@@ -249,6 +249,14 @@
 @media (max-width: 480px) {
   .Footer {
     margin-top: 55px;
+    height: 200px;
+  }
+  .Footer img {
+    width: 35%;
+  }
+  .Footer p {
+    width: 90px;
+    font-size: 12px;
   }
 }
 body {
