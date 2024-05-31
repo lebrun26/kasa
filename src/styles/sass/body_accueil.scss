@@ -111,3 +111,24 @@ body {
     }
   }
 }
+
+// Responsive tablets
+
+@media (max-width: 1024px) and (min-width: 481px) {
+  .Picture__Banner {
+    & p {
+      font-size: 27px;
+    }
+  }
+
+  .container {
+    &__structure {
+      justify-content: center;
+      &_cards {
+        & img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

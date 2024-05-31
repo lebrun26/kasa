@@ -57,3 +57,18 @@
     }
   }
 }
+
+// Responsive tablets
+
+@media (max-width: 1024px) {
+  .container__caroussel {
+    .caroussel__button--left {
+      width: 70px;
+      left: 0;
+    }
+    .caroussel__button--right {
+      width: 70px;
+      right: 0;
+    }
+  }
+}

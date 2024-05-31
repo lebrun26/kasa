@@ -45,3 +45,11 @@
     }
   }
 }
+
+// Responsive tablets
+
+@media (max-width: 1024px) {
+  .Banner {
+    padding: 25px 10px 25px 20px;
+  }
+}

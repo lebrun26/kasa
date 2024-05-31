@@ -98,14 +98,14 @@
     border-bottom-right-radius: 10px;
     & li {
       padding-bottom: 7px;
-      padding: 0 0 7px 15px;
+      padding: 8px 0 7px 15px;
     }
   }
 
   &.open {
-    margin-bottom: 12%;
+    //margin-bottom: 12%; voir comment faire
     .dropdown-list {
-      max-height: 200px;
+      max-height: 220px;
       padding: 10px 0;
     }
     .arrow {
@@ -156,6 +156,13 @@
           & p {
             border-radius: 10px;
             font-size: 10px;
+            width: 100%;
+            padding: 0;
+            height: 28px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
           }
         }
       }
@@ -189,6 +196,64 @@
       width: 100%;
       &.open {
         margin-bottom: 44%;
+      }
+    }
+  }
+}
+
+// Responsive tablets
+
+@media (max-width: 1024px) and (min-width: 481px) {
+  .container__logement {
+    padding: 0 11px 50px 11px;
+    .presentation {
+      &__main {
+        & h1 {
+          font-size: 22px;
+        }
+        & span {
+          font-size: 14px;
+        }
+        &__tags {
+          margin-top: 15px;
+          & p {
+            font-size: 13px;
+            width: 100%;
+            height: 33px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 13px;
+            padding: 0;
+          }
+        }
+      }
+      &__second {
+        &__profil {
+          & img {
+            width: 60px;
+          }
+          & p {
+            width: 87px;
+          }
+        }
+        &__rating {
+          margin-top: 35px;
+          & .star-rating {
+            & .fa-star {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .container__dropMenu {
+    gap: 35px;
+    .dropdown-menu {
+      &.open {
+        margin-bottom: 16%;
       }
     }
   }
