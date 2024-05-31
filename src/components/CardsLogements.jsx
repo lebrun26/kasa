@@ -8,7 +8,6 @@ const CardsLogements = () => {
   useEffect(() => {
     axios.get("/data.json").then((reponse) => setData(reponse.data));
   }, []);
-
   return (
     <div className="container__structure">
       {data.map((logement) => (

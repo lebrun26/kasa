@@ -342,6 +342,9 @@
   width: 75%;
   margin-top: 35px;
 }
+.container__DropMenu__about .dropdown-menu.open {
+  margin-bottom: 40px;
+}
 
 .Footer {
   margin-top: 97px;
@@ -350,6 +353,14 @@
 @media (max-width: 480px) {
   .container__DropMenu__about {
     margin: 20% 0 40% 0;
+  }
+  .container__DropMenu__about .dropdown-menu.open {
+    margin-bottom: 128px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 481px) {
+  .container__DropMenu__about .dropdown-menu.open {
+    margin-bottom: 90px;
   }
 }
 .Footer {
@@ -381,6 +392,7 @@
   .Footer p {
     width: 90px;
     font-size: 12px;
+    text-align: center;
   }
 }
 body {

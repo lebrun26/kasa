@@ -7,7 +7,6 @@ const DropMenu = ({ title, equipments }) => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
   return (
     <div className={`dropdown-menu ${isOpen ? "open" : ""}`}>
       <div onClick={toggleMenu} className="dropdown-trigger">
@@ -22,5 +21,4 @@ const DropMenu = ({ title, equipments }) => {
     </div>
   );
 };
-
 export default DropMenu;

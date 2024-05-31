@@ -6,6 +6,9 @@
   & .dropdown-menu {
     width: 75%;
     margin-top: 35px;
+    &.open {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -18,5 +21,22 @@
 @media (max-width: 480px) {
   .container__DropMenu__about {
     margin: 20% 0 40% 0;
+    & .dropdown-menu {
+      &.open {
+        margin-bottom: 128px;
+      }
+    }
+  }
+}
+
+// Responsive tablets
+
+@media (max-width: 1024px) and (min-width: 481px) {
+  .container__DropMenu__about {
+    & .dropdown-menu {
+      &.open {
+        margin-bottom: 90px;
+      }
+    }
   }
 }

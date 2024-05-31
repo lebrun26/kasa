@@ -37,7 +37,6 @@ const Logements = () => {
         setLoading(false);
       });
   }, [id, navigate]);
-
   if (loading) {
     return <div>Chargemement....</div>;
   }
