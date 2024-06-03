@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px 0 40px 0;
+  margin: 40px 0 40px 0;
   & .dropdown-menu {
     width: 75%;
-    margin-top: 35px;
+    margin-top: 36px;
     &.open {
       margin-bottom: 40px;
     }
@@ -19,11 +19,17 @@
 // Responsive Mobile
 
 @media (max-width: 480px) {
+  .body__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .container__DropMenu__about {
     margin: 20% 0 40% 0;
     & .dropdown-menu {
       &.open {
-        margin-bottom: 128px;
+        margin-bottom: 165px;
       }
     }
   }

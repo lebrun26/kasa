@@ -14,23 +14,22 @@ const Apropos = () => {
     });
   }, []);
 
-  // Récupération des textes
-  const texteId1 = data.find((item) => item.id === "1")?.texte;
-  const texteId2 = data.find((item) => item.id === "2")?.texte;
-  const texteId3 = data.find((item) => item.id === "3")?.texte;
-  const texteId4 = data.find((item) => item.id === "4")?.texte;
+  const titles = ["Fiablilité", "Respect", "Service", "Sécurité"];
 
   return (
-    <div>
+    <div className="body__container">
       <header>
         <NavBar />
       </header>
       <Banner title="" img="/images/image_about.png" spanOpacity="20%" />
       <div className="container__DropMenu__about">
-        <DropMenu title="Fiabilité" equipments={texteId1} />
-        <DropMenu title="Respect" equipments={texteId2} />
-        <DropMenu title="Service" equipments={texteId3} />
-        <DropMenu title="Sécurité" equipments={texteId4} />
+        {data.map((item, index) => (
+          <DropMenu
+            key={item.id}
+            title={titles[index]}
+            equipments={item.texte}
+          />
+        ))}
       </div>
       <footer>
         <Footer />
