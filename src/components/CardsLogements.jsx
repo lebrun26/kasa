@@ -15,7 +15,7 @@ const CardsLogements = () => {
           <div className="container__structure_cards">
             <img
               src={logement.cover}
-              alt="Images de couverture du logemement" /*Mettre {} du  titre du logement*/
+              alt={`Images de couverture du logemement ${logement.title}`} /*Mettre {} du  titre du logement*/
             />
             <p>{logement.title}</p>
           </div>

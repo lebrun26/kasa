@@ -11,7 +11,6 @@ const PresentationLogement = ({ presentation }) => {
           {presentation.tags &&
             presentation.tags.map((tag, index) => <p key={index}>{tag}</p>)}
         </div>
-        {/*Ici je pense qu'il faut faire un .map pour parcourir l'onglet tag  */}
       </div>
       <div className="presentation__second">
         <div className="presentation__second__profil">
