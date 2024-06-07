@@ -209,6 +209,9 @@
   padding-bottom: 7px;
   padding: 8px 0 7px 15px;
 }
+.dropdown-menu.open {
+  margin-bottom: 12%;
+}
 .dropdown-menu.open .dropdown-list {
   max-height: 220px;
   padding: 10px 0;
